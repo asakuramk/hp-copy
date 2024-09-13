@@ -1,3 +1,8 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
 header{
   background-color: #eee;
   text-align: center;
@@ -22,10 +27,36 @@ p{
 main{
   text-align: center;
   display: block;
+  padding: 64px;
+}
+h2{
+  margin: 0;
+  font-weight: normal;
+}
+main img{
+  margin-top: 64px;
 }
 
+h3{
+  font-weight: normal;
+}
 .container{
 margin: 0 auto;
 width: 400px;
 text-align: left;
+}
+p{
+  line-height: 1.7;
+}
+footer{
+  text-align: center;
+  padding: 64px;
+}
+footer p{
+  color: #aaa;
+}
+footer img{
+  width: 24px;
+  height: 24px;
+  padding-top: 20px;
 }
