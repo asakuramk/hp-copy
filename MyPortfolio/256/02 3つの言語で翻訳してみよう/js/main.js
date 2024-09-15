@@ -10,21 +10,29 @@ function reset() {
   })
 }
 
-btnArray[0].addEventListener("click", () => {
-  reset();
-  target.textContent = "ありがとう！";
-  btnArray[0].disabled = true;
-})
+// btnArray[0].addEventListener("click", () => {
+//   reset();
+//   target.textContent = "ありがとう！";
+//   btnArray[0].disabled = true;
+// })
 
-btnArray[1].addEventListener("click", () => {
-  reset();
-  target.textContent = "Thank you!";
-  btnArray[1].disabled = true;
-})
+// btnArray[1].addEventListener("click", () => {
+//   reset();
+//   target.textContent = "Thank you!";
+//   btnArray[1].disabled = true;
+// })
 
-btnArray[2].addEventListener("click", () => {
-  reset();
-  target.textContent = "Gracias!";
-  btnArray[2].disabled = true;
+// btnArray[2].addEventListener("click", () => {
+//   reset();
+//   target.textContent = "Gracias!";
+//   btnArray[2].disabled = true;
+// })
 
-})
+for (i = 0; i < btnArray.length; i++){
+  btnArray[i].addEventListener("click", () => {
+    reset();
+    target.textContent = "Gracias!";
+    btnArray[i].disabled = true;
+    console.log(btnArray[i]);
+  })
+}
