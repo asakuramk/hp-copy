@@ -1,25 +1,30 @@
-const btn_jp = document.getElementById("btn_jp");
-const btn_en = document.getElementById("btn_en");
-const btn_sp = document.getElementById("btn_sp");
+const jp = document.getElementById("btn_jp");
+const en = document.getElementById("btn_en");
+const sp = document.getElementById("btn_sp");
 const target = document.getElementById("target");
+const btnArray = [jp,en,sp]
 
-btn_jp.addEventListener("click", () => {
+function reset() {
+  document.querySelectorAll("button").forEach(btn => {
+    btn.disabled = false;
+  })
+}
+
+btnArray[0].addEventListener("click", () => {
+  reset();
   target.textContent = "ありがとう！";
-  btn_jp.disabled = true;
-  btn_en.disabled = false;
-  btn_sp.disabled = false;
+  btnArray[0].disabled = true;
 })
 
-btn_en.addEventListener("click", () => {
+btnArray[1].addEventListener("click", () => {
+  reset();
   target.textContent = "Thank you!";
-  btn_jp.disabled = false;
-  btn_en.disabled = true;
-  btn_sp.disabled = false;
+  btnArray[1].disabled = true;
 })
 
-btn_sp.addEventListener("click", () => {
+btnArray[2].addEventListener("click", () => {
+  reset();
   target.textContent = "Gracias!";
-  btn_jp.disabled = false;
-  btn_en.disabled = false;
-  btn_sp.disabled = true;
+  btnArray[2].disabled = true;
+
 })
