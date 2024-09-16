@@ -1,0 +1,36 @@
+/* この課題では CSS を変更してはいけません */
+
+body {
+  margin: 0;
+  padding: 16px;
+}
+
+section {
+  width: 480px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 22px;
+}
+
+p {
+  line-height: 1.6;
+}
+
+.hidden {
+  display: none;
+}
+
+#more {
+  color: #08c;
+  cursor: pointer;
+}
+
+#contents {
+  display: none;
+}
+
+#contents.appear {
+  display: block;
+}
