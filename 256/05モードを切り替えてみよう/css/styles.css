@@ -1,0 +1,53 @@
+/* 必要に応じて CSS を編集しても構いません */
+
+body {
+  color: #333;
+  background: #fff;
+}
+
+.container {
+  width: min(calc(100% - 32px), 600px);
+  margin: 0 auto;
+}
+
+.controls {
+  text-align: right;
+}
+
+h1 {
+  font-size: 22px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 8px;
+}
+
+p {
+  line-height: 1.6;
+}
+
+i {
+  font-size: 22px;
+  color: #999;
+  cursor: pointer;
+  opacity: .7;
+}
+
+
+
+
+
+i:hover {
+  opacity: 1;
+}
+
+i + i {
+  margin-left: 8px;
+}
+
+.yellow-bg{
+  color: rgb(200, 119, 13);
+}
+
+.dark{
+  background-color: black;
+  color: white;
+}
