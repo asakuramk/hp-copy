@@ -1,0 +1,33 @@
+/* 必要に応じて CSS を編集しても構いません */
+
+.container {
+  width: min(calc(100% - 32px), 600px);
+  margin: 0 auto;
+}
+
+.controls {
+  display: flex;
+  font-size: 20px;
+  justify-content: flex-end;
+}
+
+i {
+  color: #222;
+  cursor: pointer;
+  opacity: .7;
+  user-select: none;
+}
+
+i:hover {
+  opacity: 1;
+}
+
+h1 {
+  font-size: 1.2em;
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 8px;
+}
+
+p {
+  line-height: 1.6;
+}
