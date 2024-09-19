@@ -43,11 +43,18 @@ i + i {
   margin-left: 8px;
 }
 
-.yellow-bg{
+#light.color{
   color: rgb(200, 119, 13);
 }
-
-.dark{
+#dark.color{
+  color:yellow
+}
+body.color{
   background-color: black;
   color: white;
 }
+
+/* .dark{
+  background-color: black;
+  color: white;
+} */
