@@ -1,0 +1,106 @@
+/* 必要に応じて CSS を編集しても構いません */
+
+body {
+  margin: 0;
+}
+
+* {
+  margin: 0;
+}
+
+.player {
+  background-color: #000000;
+  width: 480px;
+  height: 300px;
+  margin: 16px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cover {
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  margin: 0 auto;
+  flex: 1;
+}
+
+.cover img {
+  border-radius: 8px;
+  margin-right: 24px;
+}
+
+.cover-info > * {
+  font-weight: normal;
+}
+
+.cover-info > h1 {
+  font-size: 22px;
+}
+
+.cover-info > h2 {
+  color: #A4A4A4;
+  font-size: 14px;
+}
+
+.controls {
+  position: relative;
+  bottom: 0;
+  background-color: #1A1A1A;
+  width: 100%;
+  height: 80px;
+}
+
+.seek-bar {
+  height: 4px;
+  width: 100%;
+  display: flex;
+}
+
+.seek-bar-left {
+  background-color: #00FF66;
+  height: 4px;
+  width: 40%;
+}
+
+.seek-bar-right {
+  background-color: #454545;
+  height: 4px;
+  flex: 1;
+}
+
+.buttons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.bi {
+  display: block;
+  color: #A4A4A4;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.bi:hover {
+  opacity: 0.8;
+}
+
+.bi + .bi {
+  margin-left: 32px;
+}
+
+.bi-play-fill {
+  color: #ffffff;
+  font-size: 48px;
+}
+
+
+
