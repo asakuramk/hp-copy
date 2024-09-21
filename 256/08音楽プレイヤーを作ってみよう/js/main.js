@@ -9,18 +9,36 @@ shuffle.addEventListener("click", () => {
 
 
 repeat.addEventListener("click", () => {
-  if (count == 0) {
-    repeat.classList.add("color");
-    count ++;
-  } else if (count == 1) {
-    repeat.classList.add("bi-repeat-1");
-    repeat.classList.remove("bi-repeat");
-    count++;
-  } else {
-    repeat.classList.remove("color");
-    repeat.classList.remove("bi-repeat-1");
-    repeat.classList.add("bi-repeat");
-    count = 0;
-  }
+  // if (count == 0) {
+  //   repeat.classList.add("color");
+  //   count ++;
+  // } else if (count == 1) {
+  //   repeat.classList.add("bi-repeat-1");
+  //   repeat.classList.remove("bi-repeat");
+  //   count++;
+  // } else {
+  //   repeat.classList.remove("color");
+  //   repeat.classList.remove("bi-repeat-1");
+  //   repeat.classList.add("bi-repeat");
+  //   count = 0;
+  // }
 
-});
+
+  
+  switch (count) {
+    case 0:
+      repeat.classList.add("color");
+      count++;
+      break;
+    case 1:
+      repeat.classList.add("bi-repeat-1");
+      repeat.classList.remove("bi-repeat");
+      count++;
+      break;
+    default:
+      repeat.classList.remove("color");
+      repeat.classList.remove("bi-repeat-1");
+      repeat.classList.add("bi-repeat");
+      count = 0;
+  }
+})
