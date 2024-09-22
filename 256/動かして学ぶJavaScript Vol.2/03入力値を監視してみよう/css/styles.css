@@ -47,7 +47,7 @@ button {
   display: block;
   width: 200px;
   margin: 0 auto;
-  background: #08c;
+  background: #524f8c;
   color: #fff;
   text-align: center;
   padding: 8px;
@@ -59,3 +59,4 @@ button {
 button.disabled {
   opacity: .5;
 }
+
