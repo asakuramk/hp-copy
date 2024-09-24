@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+body{
+  /* background: pink; */
+  margin: 0;
+}
+h1{
+  margin: 0;
+  font-size: 0;
+}
+header{
+  background: pink;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 16px 6px;
+}
+img{
+  vertical-align: bottom;
+}
+
+
+a{
+  background: green;
+  padding: 8px 8px;
+  border-radius: 8px;
+  display: inline-block;
+  width: 120px;
+text-align: center;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
