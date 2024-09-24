@@ -1,32 +1,32 @@
+// 右の仕様を満たすように JavaScript を使って実装してみましょう
+
 const red = document.getElementById("red");
 const green = document.getElementById("green");
 const blue = document.getElementById("blue");
-const body=document.querySelector("body")
-let rValue=""
-let r = 0;
-let g = 0;
-let b = 0;
+const body = document.querySelector("body");
 
-
-function changeColor() { 
-  body.style.backgroundColor = `rgb(${r},${g} ,${b})`;
-  console.log(`rgb(${r},${g} ,${b})`);
+let redValue = 0;
+let greenValue = 0;
+let blueValue = 0;
+function setBackground(){
+  // body.style.backgroundColor = `"rgb(${redValue},${greenValue},${blueValue})"`;
+  body.style.backgroundColor = `rgb(${redValue},${greenValue},${blueValue})`;
 }
-  
-  
 
-red.addEventListener("input", (e) => {
-  r = e.target.value;
-  changeColor();
+
+red.addEventListener('input',()=>{
+  redValue = red.value;
+  console.log(redValue);
+  setBackground();
 });
-
-
-  green.addEventListener("input", (e) => {
-    g = (parseInt(e.target.value)).toString(16);
-    changeColor();
+green.addEventListener("input",()=>{
+    greenValue=green.value;
+    console.log(greenValue);
+    setBackground();
   });
-
-  blue.addEventListener("input", (e) => {
-    b = (parseInt(e.target.value)).toString(16);
-    changeColor();
+blue.addEventListener("input",()=>{
+    blueValue=blue.value;
+    console.log(blueValue);
+    setBackground();
   });
+  
