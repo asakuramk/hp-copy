@@ -1,0 +1,15 @@
+/* 右の仕様を満たすようにメディアクエリーを使って実装してみましょう */
+/* この課題ではモバイルファーストで組み上げください */
+body{
+  background: gray;
+}
+@media (min-width: 600px){
+  body{
+  background: skyblue;
+  }
+} 
+@media (min-width: 800px){
+  body{
+  background: red;
+  }
+}
