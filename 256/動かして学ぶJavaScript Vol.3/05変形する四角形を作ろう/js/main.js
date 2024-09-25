@@ -5,24 +5,15 @@
   const box = document.getElementById("box");
   
   function newHeight() {
-    return (Math.random() * 3 + 0.5) * box.clientHeight;
+    return (Math.random()*3+0.5) ;
   };
   
-
   function newWidth() {
-    return (Math.random() * 3 + 0.5) * box.clientWidth;
+    return (Math.random() * 3 + 0.5) ;
   };
  
-
-
   btn.addEventListener("click", () => {
-    console.log(box.style.width);
-    box.style.clientHeight = newHeight();
-    box.style.clientWidth = newWidth();
-    console.log(box.width)
+    box.style.transform=`scale(${newWidth()},${newHeight()})`;
   })
-
-
-
 
 }
