@@ -1,0 +1,18 @@
+/* この課題では CSS を変更してはいけません */
+
+#clock {
+  width: 260px;
+  height: 80px;
+  background: skyblue;
+  line-height: 80px;
+  text-align: center;
+  font-size: 32px;
+  color: white;
+  font-family: monospace;
+}
+
+button {
+  margin-top: 8px;
+  padding: 4px 8px;
+  cursor: pointer;
+}

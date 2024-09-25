@@ -1,0 +1,16 @@
+/* この課題では CSS を変更してはいけません */
+
+#box {
+  width: 100px;
+  height: 100px;
+  background: skyblue;
+  margin-top: 8px;
+  
+  transform-origin: left top;
+  transition: transform .2s;
+}
+
+button {
+  padding: 4px 8px;
+  cursor: pointer;
+}
