@@ -1,0 +1,30 @@
+
+body{
+  margin: 0;
+
+}
+
+header{
+  background: blue;
+}
+.container{
+  display: flex;
+}
+main{
+  background: red;
+  flex: 1;
+}
+nav{
+  background-color: pink;
+  width: 160px;
+  order: -1;
+}
+aside{
+  background: yellow;
+width: 160px;
+
+
+}
+footer{
+  background: green;
+}
