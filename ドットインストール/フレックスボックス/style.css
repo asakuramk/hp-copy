@@ -1,21 +1,24 @@
-article{
+header{
   display: flex;
-  gap: 16px;
-  align-items: center;
-}
-article + article{
-  margin-top: 32px;
+  justify-content: space-between;
 }
 
-article:nth-child(even){
-  flex-direction: row-reverse;
-}
-.text{
-
-  flex: 1;
-}
-
-h1{
+ul{
+  list-style: none;
+  padding: 0;
   margin: 0;
-  font-size: 22px;
+  display: flex;
+}
+
+a{
+  /* background-color: pink; */
+  display: block;
+  width: 100px;
+  height: 64px;
+  line-height: 64px;
+  text-align: center;
+}
+
+a:hover{
+  background-color: #eee;
 }
