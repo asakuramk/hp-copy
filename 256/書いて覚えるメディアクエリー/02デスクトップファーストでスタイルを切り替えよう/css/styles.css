@@ -1,0 +1,19 @@
+h1{
+  font-size: 64px;
+  color: red;
+}
+@media (max-width:800px){
+  h1{
+    font-size: 32px;
+    color: green;
+  }
+}
+
+@media (max-width:600px){
+  h1{
+    font-size: 32px;
+    color: blue;
+  }
+}
+
+
