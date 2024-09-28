@@ -1,35 +1,21 @@
-html{
-  height: 100%;
-}
-body{
-  margin: 0;
-  height: 100%;
-display: flex;
-flex-direction: column;
-}
-
-header{
-  background: blue;
-}
-.container{
+article{
   display: flex;
+  gap: 16px;
+  align-items: center;
+}
+article + article{
+  margin-top: 32px;
+}
+
+article:nth-child(even){
+  flex-direction: row-reverse;
+}
+.text{
+
   flex: 1;
 }
-main{
-  background: red;
-  flex: 1;
-}
-nav{
-  background-color: pink;
-  width: 160px;
-  order: -1;
-}
-aside{
-  background: yellow;
-width: 160px;
 
-
-}
-footer{
-  background: green;
+h1{
+  margin: 0;
+  font-size: 22px;
 }
