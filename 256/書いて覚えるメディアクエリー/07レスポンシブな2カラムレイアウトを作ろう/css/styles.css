@@ -1,0 +1,50 @@
+body{
+  margin: 0;
+}
+*{
+  box-sizing: border-box;
+}
+header,main,aside,footer{
+  padding: 16px;
+}
+header{
+  background: skyblue;
+}
+.container{
+  margin: 0 16px;
+}
+
+main{
+  background: pink;
+}
+
+aside{
+  background: tomato;
+}
+
+footer{
+  background: orange;
+}
+
+
+
+
+@media (min-width:600px){
+.container{
+  display: flex;
+}
+
+aside{
+  width: 200px;
+}
+main{
+  flex: auto;
+}
+}
+
+@media (min-width:800px){
+  .container{
+    width: 800px;
+
+  }
+}
