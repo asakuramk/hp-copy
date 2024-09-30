@@ -1,0 +1,52 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+}
+
+header,nav,main,aside,footer{
+  padding: 16px;
+
+}
+
+header{
+  background-color: skyblue;
+}
+nav{
+  background-color: orange;
+  display: none;
+}
+main{
+  background-color: pink;
+}
+aside{
+  background-color: tomato;
+}
+footer{
+  background-color: yellow;
+}
+@media (min-width:600px){
+section{
+  display: flex;
+}
+aside{
+  box-sizing: border-box;
+  width: 160px;
+  margin-left: auto;
+}
+main{
+  flex: auto;
+}
+}
+
+@media (min-width:800px){
+  aside{
+    display: none;
+  }
+nav{
+
+  display: block;
+  width: 160px;
+}
+}
