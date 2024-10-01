@@ -1,0 +1,29 @@
+.item{
+  width: 480px;
+  position: relative;
+  background: pink;
+  text-align: center;
+  margin: 16px;
+}
+
+
+.title{
+  position: absolute;
+  bottom: 30px;
+}
+
+img{
+  /* transform: scale( 1.6 ); */
+  display: inline-block;
+
+}
+
+
+.description{
+  position: absolute;
+  bottom: 16px;
+}
+
+li{
+
+}
