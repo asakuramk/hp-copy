@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  margin: 0;
+  padding: 48px 0;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+}
+
+.servicesList {
+  display: flex;
+  max-width: 600px;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 0;
+  list-style: none;
+}
+.servicesList__item {
+  width: calc((100% - 24px) / 2);
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.servicesList__icon {
+  display: block;
+  padding: 24px 0;
+  background: #eee;
+  color: #777;
+  font-size: 48px;
+  text-align: center;
+  border-radius: 4px;
+}
+.servicesList__title {
+  width: 100%;
+  margin: 24px 0 0;
+  line-height: 1.6;
+  font-size: 16px;
+  text-align: center;
+}
+.servicesList__description {
+  margin: 16px 0 0;
+  font-size: 14px;
+  line-height: 1.8;
+}
