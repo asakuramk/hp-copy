@@ -1,0 +1,31 @@
+
+
+*{
+  margin: 0;
+}
+.desktop_pic{
+  display: none;
+}
+
+header{
+  display: flex;
+  background-color: #3B4B5A;
+  height: 80px;
+}
+
+@media (min-width:310px){
+.mobile_pic{
+  display: none;
+  background-color: pink;
+}
+.desktop_pic{
+  display: flex;
+}
+}
+
+@media (min-width="600px"){
+  header{
+    background-color: blue;
+  }
+
+}
