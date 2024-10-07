@@ -2,30 +2,132 @@
 
 *{
   margin: 0;
+  padding: 0;
 }
 .desktop_pic{
   display: none;
 }
 
+/* header */
 header{
   display: flex;
+  justify-content: space-between;
   background-color: #3B4B5A;
-  height: 80px;
+  padding: 16px;
+  align-items: center;
 }
-
-@media (min-width:310px){
+h1{
+  font-size: 0;
+}
 .mobile_pic{
+  vertical-align:bottom ;
+}
+.menu{
   display: none;
-  background-color: pink;
 }
-.desktop_pic{
+.bi-list{
+  font-size: 24px;
+  color: white;
+  justify-content:right;
+}
+
+/* hero */
+.hero{
   display: flex;
+
 }
+.hero{
+  background-repeat: no-repeat;
+  background: url(https://256times-upload-files.s3.ap-northeast-1.amazonaws.com/production/101/4311/af880fc03d0175ac6ec908ba4f05cab9769dbdcc.jpg) center/cover pink;
+  height: 400px;
 }
 
-@media (min-width="600px"){
+.card{
+  top: calc(50% - 200px);
+  left:50px;
+  position: absolute;
+  width: auto;
+  height: auto;
+  font-weight: normal;
+  background-color: #3B4B5A80;
+  padding: 12px 20px;
+  color: white;
+}
+
+.card span{
+  font-family: 'Times New Roman', Times, serif;
+}
+.card h2{
+  font-size: 24px;
+  line-height: 1.6;
+}
+.card p{
+  font-size: 16px;
+  font-weight:  normal;
+  margin-top: 16px;
+}
+
+/* footer */
+footer{
+  text-align: center;
+
+}
+footer{
+  background-color: #f4f3df;
+  padding: 32px;
+}
+.desc, .sns{
+  width: 300px;
+  margin: 32px auto;
+  display: flex;
+  text-align: left;
+  justify-content: space-between;
+}
+.headName{
+  list-style: none;
+  padding: 8px;
+}
+.sns{
+  width: 200px;
+  padding: 16px;
+  font-size: 30px;
+}
+
+.bi-instagram{
+  color: #FCAF45;
+}
+.bi-twitter{
+  color: #1DA1F2;
+}
+.bi-facebook{
+  color:#4267B2;
+}
+
+
+@media (min-width:600px){
   header{
-    background-color: blue;
+    padding: 16px 32px;
   }
-
+  .mobile_pic{
+    display: none;
+  }
+  .desktop_pic{
+    display: block;
+    width: 195px;
+  }
+  .bi-list{
+    display: none;
+  }
+  .menu{
+    display: flex;
+    color: white;
+    gap: 32px;
+  }
+  footer section{
+    display: flex;
+  }
+  footer section img{
+    height: 80px;
+margin: auto ;
+  }
 }
