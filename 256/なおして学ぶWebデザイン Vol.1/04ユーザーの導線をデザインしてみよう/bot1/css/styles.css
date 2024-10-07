@@ -1,0 +1,166 @@
+:root {
+  --dotinstall-color: #f99f06;
+  --dotinstall-color-opacity: rgba(249, 160, 6, 0.6);
+  --nigorotimes-color: #1f76f9;
+  --nigorotimes-color-opacity: rgba(31, 118, 249, 0.6);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 48px 0;
+  color: #666;
+  line-height: 1.8;
+  font-feature-settings: "palt";
+}
+
+img {
+  vertical-align: bottom;
+  max-width: 100%;
+}
+
+p {
+  margin: 0;
+}
+
+.content__inner {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 32px 0;
+}
+
+.content__inner--problem {
+  padding-top: 0;
+}
+.content__inner--solution {
+  padding-top: 48px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24;
+}
+
+.question {
+  text-align: center;
+}
+.question__lead-for {
+  font-size: 16px;
+}
+.question__lead-question {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.problem-list {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  gap: 24px;
+  margin: 0;
+}
+.problem-list__item {
+  flex: 1;
+  aspect-ratio: 1/1;
+  background: #eee;
+  border-radius: 50%;
+}
+.problem-list__icon {
+  display: block;
+  font-size: 56px;
+  line-height: 1;
+  text-align: center;
+  padding: 24px 0 16px;
+  color: #666;
+}
+.problem-list__text {
+  line-height: 1.6;
+  font-size: 14px;
+  padding: 0 24px;
+}
+
+.solution {
+  text-align: center;
+  background: var(--nigorotimes-color);
+  color: #fff;
+  position: relative;
+}
+.solution::after {
+  width: 64px;
+  height: 64px;
+  background: #fff;
+  content: "";
+  display: block;
+  position: absolute;
+  top: -48px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transform: rotate(45deg);
+}
+.solution__icon {
+  font-size: 56px;
+}
+.solution__lead {
+  font-size: 24px;
+  font-weight: bold;
+}
+.solution__lead-detail {
+  font-size: 16px;
+}
+
+.feature-flex {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.feature-flex__box {
+  width: calc((100% - 24px) / 2);
+  display: flex;
+  flex-direction: column;
+}
+
+.feature__title {
+  font-size: 16px;
+  margin: 0;
+  text-align: center;
+  background: #eee;
+  padding: 8px;
+}
+
+.feature-list {
+  font-size: 14px;
+  line-height: 1.6;
+}
+.feature-list--dotinstall .feature-list__item::marker {
+  color: var(--dotinstall-color-opacity);
+}
+.feature-list--256times .feature-list__item::marker {
+  color: var(--nigorotimes-color-opacity);
+}
+.feature-list__item + .feature-list__item {
+  margin-top: 0.6em;
+}
+
+.button {
+  margin-top: auto;
+  display: block;
+  text-align: center;
+  padding: 0.5em;
+  background: #eee;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 999px;
+}
+.button:hover {
+  opacity: 0.8;
+}
+.button--dotinstall {
+  background: var(--dotinstall-color);
+}
+.button--256times {
+  background: var(--nigorotimes-color);
+}
