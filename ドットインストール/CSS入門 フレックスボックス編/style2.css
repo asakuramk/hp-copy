@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+}
+body {
+  max-width: 600px;
+  margin: 50px auto;
+  border: 10px solid skyblue;
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  display: flex;
+  width: 100%; 
+  flex: 1; 
+}
+header {
+  background-color: red;
+}
+main {
+  background-color: blue;
+  width: 160px;
+}
+aside {
+  background-color: pink;
+  width: 80px;
+}
+nav {
+  background-color: brown;
+  flex: 1; /* 残りのスペースを使う */
+}
+footer {
+  background-color: purple;
+}
