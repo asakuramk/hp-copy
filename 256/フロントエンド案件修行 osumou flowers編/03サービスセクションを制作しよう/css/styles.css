@@ -1,4 +1,4 @@
-/* これまでのコードを貼り付けて制作を進めましょう */
+
 *{
   margin: 0;
   padding: 0;
@@ -100,6 +100,8 @@ footer{
 .bi-facebook{
   color:#4267B2;
 }
+
+/* *********コンセプトについて********** */
 .contents {
   display: flex;
   gap: 16px;
@@ -107,7 +109,6 @@ footer{
 }
 
 
-/* ********************************* */
 .story,
 .beauty,
 .space {
@@ -129,7 +130,7 @@ section .text {
   margin-top:16px ;
 }
 
-/* ************** media 600px******************** */
+/* ******* media 600px************ */
 @media (min-width:600px){
   .card h2{
   font-size: 32px;
@@ -140,8 +141,6 @@ section .text {
   font-weight:  normal;
   margin-top: 16px;
 }
-
-/* ********************************* */
 
 .story,
 .beauty,
@@ -170,7 +169,7 @@ section .text {
     color: white;
     gap: 32px;
   }
-  /* ********************************* */
+  
   footer section{
     display: flex;
   }
@@ -184,7 +183,7 @@ margin: auto ;
   }
 
 
-/* ************** media 1000px******************** */
+/* ******* media 1000px*********** */
 
   @media (min-width: 1000px){
       .card h2{
@@ -196,7 +195,6 @@ margin: auto ;
   font-weight:  normal;
   margin-top: 16px;
 }
-/* ********************************* */
 .story,
 .beauty,
 .space {
