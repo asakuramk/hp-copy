@@ -1,3 +1,4 @@
+/* main******* */
 
 *{
   margin: 0;
@@ -7,7 +8,8 @@
 .desktop_pic{
   display: none;
 }
-.container{
+.container,
+.service_item{
   max-width: 500px;
   margin: 0 auto;
   width: calc( 100% - 32px);
@@ -34,6 +36,13 @@ h1{
   color: white;
   justify-content:right;
 }
+.service{
+  background-color: #3B4B5A;
+  color: white;
+}
+
+
+
 /* hero */
 .hero{
   display: flex;
@@ -67,6 +76,36 @@ h1{
   font-weight:  normal;
   margin-top: 16px;
 }
+
+/* *** about service *** */
+.service_item img{
+  width: 100%;
+  border-radius: 8px;
+}
+.service h1{
+  margin-top:16px ;
+  font-size: 32px;
+  text-align: center;
+
+}
+.service ul.contents{
+  /* display: flex; */
+  flex-direction: column;
+  align-items: center;
+}
+li.service_title{
+  border-left: 8px solid #3B4B5A;
+  margin: 10px;
+
+}
+.service_item{
+  margin-top: 20px;
+}
+.service_desc{
+  margin-bottom: 16px;
+}
+
+
 /* footer */
 footer{
   text-align: center;
@@ -82,7 +121,8 @@ footer{
   text-align: left;
   justify-content: space-between;
 }
-.headName{
+.headName,
+li{
   list-style: none;
   padding: 8px;
 }
