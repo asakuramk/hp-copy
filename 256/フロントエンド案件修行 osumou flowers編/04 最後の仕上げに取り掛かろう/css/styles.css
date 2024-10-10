@@ -1,0 +1,297 @@
+/* これまでのコードを貼り付けて制作を進めましょう */
+
+/* main******* */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.desktop_pic{
+  display: none;
+}
+.container,
+.service_item{
+  max-width: 500px;
+  margin: 0 auto;
+  width: calc( 100% - 32px);
+}
+/* header */
+header{
+  display: flex;
+  justify-content: space-between;
+  background-color: #3B4B5A;
+  padding: 16px;
+  align-items: center;
+}
+h1{
+  font-size: 0;
+}
+.mobile_pic{
+  vertical-align:bottom ;
+}
+.menu{
+  display: none;
+}
+.bi-list{
+  font-size: 24px;
+  color: white;
+  justify-content:right;
+}
+.service{
+  background-color: #3B4B5A;
+  color: white;
+}
+
+
+
+/* hero */
+.hero{
+  display: flex;
+}
+.hero{
+  background-repeat: no-repeat;
+  background: url(https://256times-upload-files.s3.ap-northeast-1.amazonaws.com/production/101/4311/af880fc03d0175ac6ec908ba4f05cab9769dbdcc.jpg) center/cover pink;
+  height: 400px;
+  position: relative;
+}
+.card{
+  top: 100px;
+  left:50px;
+  position: absolute;
+  width: auto;
+  height: auto;
+  font-weight: normal;
+  background-color: #3B4B5A80;
+  padding: 12px 20px;
+  color: white;
+}
+.card span{
+  font-family: 'Times New Roman', Times, serif;
+}
+.card h2{
+  font-size: 24px;
+  line-height: 1.6;
+}
+.card p{
+  font-size: 16px;
+  font-weight:  normal;
+  margin-top: 16px;
+}
+
+/* *** about service *** */
+.service_item img{
+  width: 100%;
+  border-radius: 8px;
+}
+.service h1{
+  margin-top:16px ;
+  font-size: 32px;
+  text-align: center;
+
+}
+.service ul.contents{
+  /* display: flex; */
+  flex-direction: column;
+  align-items: center;
+}
+li.service_title{
+  border-left: 8px solid #3B4B5A;
+  margin: 10px;
+
+}
+.service_item{
+  margin-top: 20px;
+}
+.service_desc{
+  margin-bottom: 16px;
+}
+
+
+/* footer */
+footer{
+  text-align: center;
+}
+footer{
+  background-color: #f4f3df;
+  padding: 32px;
+}
+.desc, .sns{
+  width: 300px;
+  margin: 32px auto;
+  display: flex;
+  text-align: left;
+  justify-content: space-between;
+}
+.headName,
+li{
+  list-style: none;
+  padding: 8px;
+}
+.sns{
+  width: 200px;
+  padding: 16px;
+  font-size: 30px;
+}
+.bi-instagram{
+  color: #FCAF45;
+}
+.bi-twitter{
+  color: #1DA1F2;
+}
+.bi-facebook{
+  color:#4267B2;
+}
+
+/* *********コンセプトについて********** */
+.contents {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+
+.story,
+.beauty,
+.space {
+  display: flex;
+  flex-direction: column; /* 縦方向に配置 */
+  padding: 16px 16px;
+}
+section .text {
+  flex: 1; 
+}
+.story img,
+.story p,
+.space img,
+.space p,
+.beauty img,
+.beauty p{
+  width: 100%;
+  height: auto;
+  margin-top:16px ;
+}
+
+
+/* **********gallery********** */
+.gallery_contents div.container{
+  margin-top: 32px;
+  width:100%;
+  /* background-color: pink; */
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.gallery_items img{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition-duration: 0.3s;
+}
+.gallery_items img:hover{
+  cursor: pointer;
+  transform: scale(1.3,1.3);
+}
+
+
+
+/* ******* media 600px************ */
+@media (min-width:600px){
+  .gallery_contents div.container{
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .gallery_items img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  .card h2{
+  font-size: 32px;
+  line-height: 1.6;
+}
+.card p{
+  font-size: 24px;
+  font-weight:  normal;
+  margin-top: 16px;
+}
+
+.story,
+.beauty,
+.space {
+    width: calc((100% - 32px) / 2);
+  }
+  .container{
+  max-width: 800px;
+  margin: 0 auto;
+}
+  header{
+    padding: 16px 32px;
+  }
+  .mobile_pic{
+    display: none;
+  }
+  .desktop_pic{
+    display: block;
+    width: 195px;
+  }
+  .bi-list{
+    display: none;
+  }
+  .menu{
+    display: flex;
+    color: white;
+    gap: 32px;
+  }
+  
+  footer section{
+    display: flex;
+  }
+  footer section img{
+    height: 80px;
+margin: auto ;
+  }
+  p.description{
+    line-height: 1.6;
+    margin-top: 16px;
+  }
+
+
+/* ******* media 1000px*********** */
+
+  @media (min-width: 1000px){
+    .gallery_contents div.container{
+      width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .gallery_items img{
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+      .card h2{
+  font-size: 40px;
+  line-height: 1.6;
+}
+.card p{
+  font-size: 32px;
+  font-weight:  normal;
+  margin-top: 16px;
+}
+.story,
+.beauty,
+.space {
+    width: calc((100% - 32px) / 3);
+    }
+      .container{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+}
