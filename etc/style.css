@@ -1,0 +1,22 @@
+img{
+  width: 10%;
+  height: 10%;
+}
+article{
+  display: flex;
+  justify-content: space-between;
+  width: 800px;
+  margin: 32px auto;
+}
+.menus{
+  display: flex;
+}
+
+a{
+  width: 100px;
+  text-align: center;
+}
+a:hover{
+  background-color: #eee;
+
+}
