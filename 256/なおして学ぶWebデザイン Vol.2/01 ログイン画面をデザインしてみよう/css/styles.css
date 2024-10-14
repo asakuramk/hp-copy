@@ -1,0 +1,77 @@
+/* 自由に編集してください */
+*{
+  margin: 0;
+}
+
+body{
+  background-color: #eee;
+}
+
+img{
+  width: 180px;
+  height: 46px;
+  align-items: center;
+}
+
+.card{
+  width: 360px;
+  height: 360px;
+  background-color: white;
+  margin: 100px auto;
+  border-radius: 16px;
+  text-align: center;
+  padding: 32px ;
+}
+
+h3{
+  margin-top: 32px;
+}
+
+.email,
+.password,
+.btn{
+  margin-top: 16px;
+  display: block;
+  padding: 4px;
+  text-align: left;
+  border-radius: 4px;
+}
+.email input,
+.password input{
+  line-height: 24px;
+  width: 100%;
+  font-size: 16px;
+}
+.btn{
+  background-color: #86b6ff;
+  color: #0a37b3;
+  text-align: center;
+  font-weight: bold;
+}
+.btn:hover{
+  cursor: pointer;
+}
+input{
+  border: 0;
+}
+
+.email,
+.password,
+input
+{
+  background:#eee;
+}
+
+.info{
+  text-align: left;
+  font-size: 12px;
+  margin-top: 8px;
+}
+.checkbox,
+.forgetPass,
+.generatePass{
+  display: block;
+  margin-top: 8px;
+}
+
+
