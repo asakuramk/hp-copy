@@ -17,6 +17,24 @@ display: flex;
   border: 1px solid black;
   width: calc((100% - 32px) / 3);
   padding: 16px;
+  position: relative;
+  height: 400px;
+}
+.bi{
+  font-size: 30px;
+ 
+}
+
+.recommend{
+  height: 30px;
+
+}
+
+.recommend.active{
+  text-align: center;
+  font-weight: bold;
+  background-color: red;
+  border-radius: 4px;
 }
 .item_title{
   font-size: 14px;
@@ -27,11 +45,32 @@ display: flex;
   font-size: 14px;
 }
 .item_price{
+  margin-top: 8px;
   font-size: 14px;
+  text-align: center;
 }
 .item_price span{
   font-size: 30px;
 }
+ul{
+  margin-top: 8px;
+  border-top: 1px solid gray;
+  padding-top: 8px;
+}
 li{
+  font-size: 14px;
   list-style: none;
+  line-height: 1.6;
+}
+button{
+
+  width: 90%;
+  padding: 8px;
+  border: none;
+  display: block;
+  background-color: blue;
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  border-radius: 6px;
 }
