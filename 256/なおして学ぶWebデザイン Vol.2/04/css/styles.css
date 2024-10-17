@@ -1,13 +1,37 @@
-*{
+
+
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.container{
+
+.container {
   margin: 0 auto;
   width: 880px;
-  display: flex;
+display: flex;
+  gap: 16px; 
 }
-div.item{
-  display: block;
+
+.item {
   border: 1px solid black;
-  width: calc(( 100% - 32px) / 3);
+  width: calc((100% - 32px) / 3);
+  padding: 16px;
+}
+.item_title{
+  font-size: 14px;
+  font-weight: bold;
+ 
+}
+.item_header{
+  font-size: 14px;
+}
+.item_price{
+  font-size: 14px;
+}
+.item_price span{
+  font-size: 30px;
+}
+li{
+  list-style: none;
 }
