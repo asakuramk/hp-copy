@@ -3,7 +3,11 @@
 }
 .container{
   margin: 0 auto;
+  width: 880px;
+  display: flex;
 }
-.item{
+div.item{
+  display: block;
   border: 1px solid black;
+  width: calc(( 100% - 32px) / 3);
 }
